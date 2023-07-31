@@ -1,0 +1,150 @@
+@import './../vars.scss';
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.407);
+
+    z-index: 100;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &__form{
+        position: relative;
+
+        min-width: 200px;
+        background-color: $color-white;
+        border-radius: 6px;
+
+        padding: 32px;
+
+        &:hover{
+            cursor: default;
+        }
+
+        &-wrap{
+            display: flex;
+            gap: 32px;
+            align-items: center;
+
+            @include phone{
+                flex-direction: column;
+            }
+        }
+
+        &-close{
+            display: none;
+            position: absolute;
+            right: 16px;
+            top: 4px;
+
+            font-size: 42px;
+            color: $color-black;
+
+            @include tablet{
+                display: block;
+            }
+
+            &:hover{
+                cursor: pointer;
+            }
+
+        }
+
+        &-title{
+            margin-bottom: 24px;
+
+            &--no-margin{
+                margin: 0;
+            }
+        }
+
+        &-input{
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.569);
+            border: 1px solid $color-purple;
+            border-radius: 27px;
+            width: 100%;
+            -webkit-appearance: none;
+               -moz-appearance: none;
+                    appearance: none;
+            
+            &:hover{
+                cursor: pointer;
+            }
+
+            @include tablet{
+                flex-direction: column;
+                align-items: end;
+                gap: 28px;
+            }
+
+            &-wrap{
+                min-width: 400px;
+                width: 100%;
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            &-mask{
+                width: 100%;
+                
+                input{
+                    display: none;
+                }
+
+                .modal__form-input-fake{
+                    display: block;
+
+                    padding: 12px 20px;
+                    background: rgba(255, 255, 255, 0.569);
+                    border: 1px solid $color-purple;
+                    border-radius: 27px;
+                    width: 100%;
+                    -webkit-appearance: none;
+                       -moz-appearance: none;
+                            appearance: none;
+                }
+            }
+
+        }
+
+        &-btn{
+            border: 1px solid $color-purple;
+            border-radius: 50%;
+            color: $color-white;
+
+            min-width: 200px;
+            max-width: 200px;
+            min-height: 200px;
+            max-height: 200px;
+
+            &-text{
+                font-size: 20px;
+                font-weight: 700;
+            }
+
+        }
+
+    }
+
+}
+
+select{
+    background:rgba(255, 255, 255, 0.569) url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat !important;
+    background-position: calc(100% - 16px) center !important;
+}

@@ -1,0 +1,61 @@
+@import './../vars.scss';
+
+.slider{
+    width: 100%;
+    position: relative;
+
+    &__line{
+        width: auto;
+        height: auto;
+        display: flex;
+        
+        &-wrap{
+            width: 100%;
+            overflow: hidden;
+        }
+
+        &--transition{
+            transition: all 1s ease;
+        }
+        
+    }
+
+    &__btn{
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+
+        border: none;
+        background-color: #00000000;
+
+        &-prev{
+            left: -60px;
+            @include tablet{
+                left: -15px;
+            }
+        }
+
+        &-next{
+            right: -60px;
+            @include tablet{
+                right: -15px;
+            }
+        }
+
+        svg{
+            width: 23px;
+            height: 49px;
+
+            @include tablet{
+                width: 15px;
+                height: 26px;
+            }
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+
+}

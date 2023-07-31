@@ -1,0 +1,75 @@
+$color-white: #fff;
+$color-white-light: #F2F2F2;
+$color-black: #000;
+$color-dark: #333333;
+$color-gray: #BDBDBD;
+$color-purple: #7429BF;
+$color-blue: #33DCD8;
+
+$width-content: 1296px;
+$width-max: 1440px;
+
+
+@mixin phone {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+
+    // /* iPhone 6/7/8 */
+    // @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    //     @content;
+    // }
+    
+    // /* iPhone 6/7/8 Plus */
+    // @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+    //     @content;
+    // }
+    
+    // /* iPhone X/XS/11 Pro */
+    // @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    //     @content;
+    // }
+    
+    // /* iPhone XR/XS Max/11/11 Pro Max */
+    // @media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+    //     @content;
+    // }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+
+    // /* iPhone 6/7/8 */
+    // @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    //     @content;
+    // }
+    
+    // /* iPhone 6/7/8 Plus */
+    // @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+    //     @content;
+    // }
+    
+    // /* iPhone X/XS/11 Pro */
+    // @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    //     @content;
+    // }
+    
+    // /* iPhone XR/XS Max/11/11 Pro Max */
+    // @media only screen and (min-device-width: 414px) and (max-device-width: 896px) {
+    //     @content;
+    // }
+}
+
+@mixin laptop {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin laptopL {
+    @media screen and (max-width: 1296px) {
+        @content;
+    }
+}

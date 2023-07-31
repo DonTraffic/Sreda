@@ -1,0 +1,587 @@
+@import './../vars.scss';
+
+.section-main{
+    display: flex;
+    justify-content: space-between;
+
+    // margin-bottom: 100px;
+
+    @include tablet{
+        flex-direction: column-reverse;
+    }
+
+    &__content{
+        max-width: 636px;
+        width: 100%;
+
+        @include tablet{
+            margin-top: 25px;
+        }
+
+        &-title{
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 64px;
+            text-transform: lowercase;
+
+            @include laptop{
+                font-size: 48px;
+                line-height: 48px;
+            }
+
+            @include tablet{
+                font-size: 31px;
+                line-height: 31px;
+            }
+        }
+
+        &-text{
+            max-width: 416px;
+
+            color: $color-black;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: lowercase;
+
+            margin: 25px 0 50px 0;
+
+            @include laptop{
+                font-size: 12px;
+
+                margin: 20px 0 40px 0;
+            }
+
+            @include tablet{
+                font-size: 12px;
+
+                margin: 15px 0 30px 0;
+            }
+        }
+    }
+
+    &__img{
+        width: 655px;
+
+        @include tablet{
+            width: 100%;
+        }
+    }
+}
+
+.section-tasks{
+    &__item{
+        overflow: hidden;
+
+        border-radius: 15px;
+        border: 1px solid #000;
+
+        display: flex;
+        flex-direction: column;
+
+        min-width: 306px;
+
+        img{
+            border-radius: 15px;
+            border: 1px solid #000;
+            border-top: 0px solid #000;
+
+            width: calc(100% + 2px);
+            height: 127px;
+            object-fit: cover;
+
+            position: relative;
+            left: -1px;
+        }
+
+        &-content{
+            height: 124px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            padding: 14px 20px 20px 20px;
+
+            *{
+                text-transform: lowercase;
+            }
+            
+            &-title{
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 24px;
+            }
+
+            &-link{
+                font-size: 14px;
+                font-weight: 600;
+                color: $color-gray;
+                text-decoration: none;
+
+                display: flex;
+                align-items: center;
+
+                &-svg{
+                    width: 20px;
+                    height: 6px;
+                    margin-left: 5px;
+
+                    fill: $color-gray;
+                }
+
+                &:hover{
+                    color: $color-black;
+                    svg{
+                        fill: $color-gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-surveys{
+    &__content{
+        display: flex;
+        gap: 12px;
+
+        @include tablet{
+            flex-direction: column;
+        }
+
+        &-title{
+            color: $color-black;
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 42px;
+
+            @include laptop{
+                font-size: 32px;
+                font-weight: 600;
+            }
+
+            @include tablet{
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+
+        &-info{
+            &-wrap{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                @include laptop{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 24px;
+                }
+
+                @include tablet{
+                    gap: 15px;
+                }
+            }
+
+            &-item{
+                color: $color-black;
+                font-size: 24px;
+                font-weight: 600;
+
+                @include laptop{
+                    font-size: 20px;
+                }
+
+                @include tablet{
+                    font-size: 16px;
+                }
+
+                span{
+                    color: $color-blue;
+                }
+            }
+
+            &-desc{
+                color: $color-black;
+                font-size: 18px;
+                font-weight: 500;
+
+                margin: 25px 0 30px 0;
+
+                @include laptop{
+                    font-size: 18px;
+                    margin: 15px 0 25px 0;
+                }
+
+                @include tablet{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.section-material{
+    &__item{
+        border-radius: 15px;
+        border: 1px solid $color-black;
+        overflow: hidden;
+
+        &-img{
+            position: relative;
+            top: -1px;
+            left: -1px;
+
+            &-desc{
+                color: $color-white;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: lowercase;
+
+                padding: 3px 14px;
+                background-color: $color-blue;
+                border-radius: 31px;
+
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            &-title{
+                color: $color-black;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 20px;
+                text-transform: lowercase;
+
+                max-width: 60%;
+
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+
+        &-content{
+            padding: 15px 20px 20px 20px;
+
+            &-info{
+                display: flex;
+                justify-content: space-between;
+
+                margin-bottom: 20px;
+
+                &-item{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    &-svg{
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    &-text{
+                        color: $color-black;
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-transform: lowercase;
+                    }
+                }
+            }
+
+            &-button{
+                width: 100%;
+                padding: 15px;
+                border-radius: 5px;
+                border: 1px solid $color-black;
+                background-color: $color-white;
+
+                color: $color-black;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 500;
+                text-transform: lowercase;
+
+                transition: .4s ease;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: $color-black;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.section-price{
+    &-wrap{
+        display: grid;
+        grid-template-columns: 580px auto;
+        grid-template-rows: auto 1fr;
+        gap: 0 150px;
+
+        grid-template-areas: 
+            "section-price__title section-price__desc"
+            "section-price__price section-price__button"; 
+
+        @include laptopL{
+            gap: 40px;
+        }
+
+        @include laptop{
+            grid-template-columns: 420px auto;
+        }
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+    }
+
+    &__title {
+        grid-area: section-price__title;
+    }
+
+    &__price { 
+        grid-area: section-price__price; 
+
+        color: $color-black;
+
+        font-size: 86px;
+        font-weight: 600;
+
+        @include laptop{
+            font-size: 48px;
+        }
+
+        @include tablet{
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        span{
+            font-size: 128px;
+
+            @include laptop{
+                font-size: 96px;
+            }
+
+            @include tablet{
+                font-size: 64px;
+            }
+        }
+    }
+
+    &__desc {
+        grid-area: section-price__desc;
+
+        color: $color-black;
+        font-size: 18px;
+        font-weight: 500;
+
+        max-width: 526px;
+
+        @include tablet{
+            font-size: 14px;
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+    }
+
+    &__button {
+        grid-area: section-price__button;
+
+        position: relative;
+
+        &-wrap{
+            position: absolute;
+            bottom: 0;
+
+            @include tablet{
+                position: relative;
+            }
+        }
+    }
+}
+
+.section-info{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+
+    min-height: 400px;
+    min-width: 400px;
+
+    @include tablet{
+        min-height: 250px;
+        min-width: 250px;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        max-width: 684px;
+
+        z-index: 2;
+
+        @include tablet{
+            max-width: 290px;
+        }
+
+        &-title{
+            color: $color-black;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 64px;
+            text-transform: lowercase;
+            text-align: center;
+
+            margin: 5px 0 25px 0;
+
+            @include tablet{
+                font-size: 31px;
+                line-height: 31px;
+
+                margin: 3px 0 20px 0;
+            }
+        }
+
+        &-desc{
+            color: $color-black;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            text-transform: lowercase;
+            text-align: center;
+
+            @include tablet{
+                font-size: 10px;
+            }
+        }
+    }
+
+    &__background{
+        position: absolute;
+
+        height: 400px;
+        width: 400px;
+
+        @include tablet{
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
+
+.section-form{
+
+    &-wrap{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__title{
+        color: $color-black;
+        text-align: center;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 42px; 
+
+        @include laptop{
+            font-size: 32px;
+        }
+
+        @include tablet{
+            font-size: 24px;
+        }
+    }
+
+    &__desc{
+        color:$color-black;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: lowercase;
+
+        margin: 17px 0 34px 0;
+
+        max-width: 745px;
+
+        @include tablet{
+            font-size: 12px;
+        }
+    }
+
+    &__inputs{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px;
+        width: 100%;
+        max-width: 1050px;
+        grid-auto-flow: column;
+
+        @include laptop{
+            gap: 15px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        @include tablet{
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-input{
+            border-radius: 5px;
+            border: 1px solid $color-gray;
+            background: #FFF;
+
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: lowercase;
+
+            padding: 15px;
+
+            &::placeholder { /* Most modern browsers support this now. */
+                color: $color-gray;;
+            }
+
+            @include tablet{
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__button{
+        margin: 20px 0;
+    }
+
+    &__agreement{
+        color: $color-dark;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: lowercase;
+
+        max-width: 353px;
+
+        @include tablet{
+            font-size: 12px;
+        }
+    }
+}
