@@ -8,33 +8,31 @@ document.querySelectorAll('.slider').forEach(slider => {
 
     const setting = slider.getAttribute('items-count') ?
         JSON.parse(slider.getAttribute('items-count')) : {0: 1} ;
+    const widthWrap = slider.getAttribute('width-wrap') ? 
+        slider.getAttribute('width-wrap') : 1024 ;
     const drag = slider.getAttribute('drag') ? 
-        slider.getAttribute('drag') : true ;
+        slider.getAttribute('drag') : 'true' ;
     const gap = slider.getAttribute('gap') ?
         JSON.parse(slider.getAttribute('gap')) : {0: 1} ;
-        sliderLine.style.gap = `${gap}px`
     const padding = slider.getAttribute('padding') ?
         JSON.parse(slider.getAttribute('padding')) : '0' ;
-        if (window.innerWidth < 1296) sliderLine.style.padding = `0 ${padding}px`
 
     let countMax = sliderCount()
     let width = 0
     let widthItem = 0
     let matrix = new WebKitCSSMatrix(window.getComputedStyle(sliderLine).transform).m41;
 
-    function normalaceSlider() {
-        if (window.innerWidth > 1296) return rollSlider()
-
-        console.log(`matrix: ${matrix}`);
+    function rollSlider() {
         if( matrix > 0 ) matrix = 0
 
-        let maxWidth = -( sliderLine.offsetWidth - width + padding*2)
+        let maxWidth = -( 
+            (items.length*items[0].offsetWidth) - width + 
+            (window.innerWidth < widthWrap ? padding*2 : 0) + 
+            gap * (items.length-1) 
+        ) 
+
         if( matrix < maxWidth) matrix = maxWidth
 
-        rollSlider()
-    }
-    
-    function rollSlider() {
         sliderLine.style.transform = `translate(${matrix}px)`
     }
 
@@ -53,6 +51,9 @@ document.querySelectorAll('.slider').forEach(slider => {
     function init () {
         countMax = sliderCount()
 
+        if (window.innerWidth < widthWrap) sliderLine.style.padding = `0 ${padding}px`
+        sliderLine.style.gap = `${gap}px`
+
         width = sliderWrap.offsetWidth
         widthItem = (width / countMax) - gap + gap/countMax
 
@@ -64,7 +65,7 @@ document.querySelectorAll('.slider').forEach(slider => {
 
         sliderLine.classList.add('slider__line--transition')
 
-        normalaceSlider()
+        rollSlider()
     }
 
     window.addEventListener('resize', init)
@@ -72,19 +73,17 @@ document.querySelectorAll('.slider').forEach(slider => {
 
     if (btnPrev) {btnPrev.addEventListener('click', e => {
         matrix = matrix + widthItem
-        normalaceSlider()
+        rollSlider()
     })}
 
     if (btnNext) {btnNext.addEventListener('click', e => {
         matrix = matrix - widthItem
-        normalaceSlider()
+        rollSlider()
     })}
 
-    sliderLine.onmousedown = (event) => sliderTouch(event)
+    if (drag != 'false') sliderLine.onmousedown = (event) => sliderTouch(event)
 
     function sliderTouch(event) {
-        if (window.innerWidth > 1296) return false
-        
         event.preventDefault()
         sliderLine.classList.remove('slider__line--transition')
 
@@ -107,7 +106,7 @@ document.querySelectorAll('.slider').forEach(slider => {
 
             sliderLine.classList.add('slider__line--transition')
 
-            normalaceSlider()
+            rollSlider()
         }
     }
 
