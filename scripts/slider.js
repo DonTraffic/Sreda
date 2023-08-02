@@ -1,17 +1,21 @@
+// Инициализируем все слайдеры
 document.querySelectorAll('.slider').forEach(slider => {
 
+    // достаём важные блоки
     const items = slider.querySelectorAll('.slider__line-item')
     const sliderLine = slider.querySelector('.slider__line')
     const sliderWrap = slider.querySelector('.slider__line-wrap')
     const btnPrev = slider.querySelector('.slider__btn-prev')
     const btnNext = slider.querySelector('.slider__btn-next')
 
+    // достаём настройки
     const setting = slider.getAttribute('items-count') ?
         JSON.parse(slider.getAttribute('items-count')) : {0: 1} ;
     const widthWrap = slider.getAttribute('width-wrap') ? 
         slider.getAttribute('width-wrap') : 1024 ;
     const drag = slider.getAttribute('drag') ? 
         slider.getAttribute('drag') : 'true' ;
+        if (drag != 'false') sliderLine.classList.add('slider__line--dragable')
     const gap = slider.getAttribute('gap') ?
         JSON.parse(slider.getAttribute('gap')) : {0: 1} ;
     const padding = slider.getAttribute('padding') ?
@@ -72,18 +76,16 @@ document.querySelectorAll('.slider').forEach(slider => {
     init()
 
     if (btnPrev) {btnPrev.addEventListener('click', e => {
-        matrix = matrix + widthItem
+        matrix = matrix + widthItem + gap
         rollSlider()
     })}
 
     if (btnNext) {btnNext.addEventListener('click', e => {
-        matrix = matrix - widthItem
+        matrix = matrix - widthItem - gap
         rollSlider()
     })}
 
-    if (drag != 'false') sliderLine.onmousedown = (event) => sliderTouch(event)
-
-    function sliderTouch(event) {
+    if (drag != 'false') sliderLine.onmousedown = (event) => {
         event.preventDefault()
         sliderLine.classList.remove('slider__line--transition')
 
@@ -103,6 +105,33 @@ document.querySelectorAll('.slider').forEach(slider => {
         function onMouseUp(e) {
             document.removeEventListener('mousemove', onMouseMove)
             document.removeEventListener('mouseup', onMouseUp)
+
+            sliderLine.classList.add('slider__line--transition')
+
+            rollSlider()
+        }
+    }
+
+    if (drag != 'false') sliderLine.ontouchstart = (event) => {
+        event.preventDefault()
+        sliderLine.classList.remove('slider__line--transition')
+        
+        matrix = new WebKitCSSMatrix(window.getComputedStyle(sliderLine).transform).m41;
+
+        let shiftX = event.changedTouches[0].clientX - matrix
+
+        document.addEventListener('touchmove', onTouchMove)
+        document.addEventListener('touchend', onTouchUp)
+
+        function onTouchMove(e) { 
+            let value = e.changedTouches[0].clientX - shiftX
+            sliderLine.style.transform = `translate(${value}px)` 
+            matrix = value
+        }
+
+        function onTouchUp(e) {
+            document.removeEventListener('touchmove', onTouchMove)
+            document.removeEventListener('touchend', onTouchUp)
 
             sliderLine.classList.add('slider__line--transition')
 

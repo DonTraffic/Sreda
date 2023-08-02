@@ -14,38 +14,8 @@
 .slider__line--transition {
   transition: all 1s ease;
 }
-.slider__btn {
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-.slider__btn-prev {
-  left: -60px;
-}
-@media screen and (max-width: 768px) {
-  .slider__btn-prev {
-    left: -15px;
-  }
-}
-.slider__btn-next {
-  right: -60px;
-}
-@media screen and (max-width: 768px) {
-  .slider__btn-next {
-    right: -15px;
-  }
-}
-.slider__btn svg {
-  width: 23px;
-  height: 49px;
-}
-@media screen and (max-width: 768px) {
-  .slider__btn svg {
-    width: 15px;
-    height: 26px;
-  }
+.slider__line--dragable {
+  cursor: grab;
 }
 .slider__btn:hover {
   cursor: pointer;
