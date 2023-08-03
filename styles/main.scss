@@ -92,6 +92,12 @@ section{
         color: $color-gray;
 
         margin-right: 3px;
+
+        transition: .4s ease;
+
+        &:hover{
+            color: $color-orange;
+        }
     }
 }
 
@@ -245,6 +251,12 @@ h1{
                 font-weight: 600;
                 text-decoration: none;
                 color: $color-black;
+
+                transition: .4s ease;
+
+                &:hover{
+                    color: $color-orange;
+                }
             }
 
         }
@@ -334,6 +346,12 @@ h1{
                 &-close{
                     height: 40px;
                     width: 40px;
+                    transition: .4s ease;
+
+                    &:hover{
+                        cursor: pointer;
+                        transform: rotate(45deg);
+                    }
 
                     @include phone{
                         height: 21px;
@@ -355,6 +373,12 @@ h1{
 
                 a{
                     font-size: 64px;
+
+                    transition: .4s ease;
+
+                    &:hover{
+                        color: $color-orange;
+                    }
 
                     @include phone{
                         font-size: 24px;
@@ -468,6 +492,12 @@ h1{
             font-weight: 600;
             text-decoration: none;
 
+            transition: .4s ease;
+
+            &:hover{
+                color: $color-orange;
+            }
+
             @include laptop{
                 display: flex;
                 justify-content: center;
@@ -490,10 +520,16 @@ h1{
             &-svg{
                 width: 40px;
                 height: 40px;
+
+                transition: .4s ease;
+
+                &:hover{
+                    fill: $color-orange;
+                }
             }
 
             &--margin{
-                @include laptop{
+                @include tablet{
                     margin-top: 40px;
                 }
             }
@@ -516,6 +552,12 @@ h1{
             font-size: 18px;
             font-weight: 600;
             text-decoration: none;
+
+            transition: .4s ease;
+
+            &:hover{
+                color: $color-orange;
+            }
         }
 
         &-copy{

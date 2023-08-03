@@ -87,6 +87,10 @@ section {
   text-decoration: none;
   color: #BDBDBD;
   margin-right: 3px;
+  transition: 0.4s ease;
+}
+.bread-crumbs__link:hover {
+  color: #FF776B;
 }
 
 h1 {
@@ -233,6 +237,10 @@ h1 {
   font-weight: 600;
   text-decoration: none;
   color: #000;
+  transition: 0.4s ease;
+}
+.header__content-list-item:hover {
+  color: #FF776B;
 }
 .header__content-menu {
   display: flex;
@@ -308,6 +316,11 @@ h1 {
 .header__content-modal-header-close {
   height: 40px;
   width: 40px;
+  transition: 0.4s ease;
+}
+.header__content-modal-header-close:hover {
+  cursor: pointer;
+  transform: rotate(45deg);
 }
 @media screen and (max-width: 425px) {
   .header__content-modal-header-close {
@@ -328,6 +341,10 @@ h1 {
 }
 .header__content-modal-list a {
   font-size: 64px;
+  transition: 0.4s ease;
+}
+.header__content-modal-list a:hover {
+  color: #FF776B;
 }
 @media screen and (max-width: 425px) {
   .header__content-modal-list a {
@@ -434,6 +451,10 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
+  transition: 0.4s ease;
+}
+.footer__links-link:hover {
+  color: #FF776B;
 }
 @media screen and (max-width: 992px) {
   .footer__links-link {
@@ -459,8 +480,12 @@ h1 {
 .footer__links-link-svg {
   width: 40px;
   height: 40px;
+  transition: 0.4s ease;
 }
-@media screen and (max-width: 992px) {
+.footer__links-link-svg:hover {
+  fill: #FF776B;
+}
+@media screen and (max-width: 768px) {
   .footer__links-link--margin {
     margin-top: 40px;
   }
@@ -482,6 +507,10 @@ h1 {
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
+  transition: 0.4s ease;
+}
+.footer__agreement-link:hover {
+  color: #FF776B;
 }
 .footer__agreement-copy {
   color: #BDBDBD;
