@@ -18,23 +18,6 @@
             margin-top: 25px;
         }
 
-        &-title{
-            font-size: 64px;
-            font-weight: 600;
-            line-height: 64px;
-            text-transform: lowercase;
-
-            @include laptop{
-                font-size: 48px;
-                line-height: 48px;
-            }
-
-            @include tablet{
-                font-size: 31px;
-                line-height: 31px;
-            }
-        }
-
         &-text{
             max-width: 416px;
 
@@ -489,107 +472,6 @@
         @include tablet{
             width: 250px;
             height: 250px;
-        }
-    }
-}
-
-.section-form{
-
-    &-wrap{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    &__title{
-        color: $color-black;
-        text-align: center;
-        font-size: 42px;
-        font-weight: 600;
-        line-height: 42px; 
-
-        @include laptop{
-            font-size: 32px;
-        }
-
-        @include tablet{
-            font-size: 24px;
-        }
-    }
-
-    &__desc{
-        color:$color-black;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 500;
-        text-transform: lowercase;
-
-        margin: 17px 0 34px 0;
-
-        max-width: 745px;
-
-        @include tablet{
-            font-size: 12px;
-        }
-    }
-
-    &__inputs{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 25px;
-        width: 100%;
-        max-width: 1050px;
-        grid-auto-flow: column;
-
-        @include laptop{
-            gap: 15px;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-        }
-
-        @include tablet{
-            gap: 15px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        &-input{
-            border-radius: 5px;
-            border: 1px solid $color-gray;
-            background: #FFF;
-
-            font-size: 18px;
-            font-weight: 500;
-            text-transform: lowercase;
-
-            padding: 15px;
-
-            &::placeholder { /* Most modern browsers support this now. */
-                color: $color-gray;;
-            }
-
-            @include tablet{
-                font-size: 14px;
-            }
-        }
-    }
-
-    &__button{
-        margin: 20px 0;
-    }
-
-    &__agreement{
-        color: $color-dark;
-        text-align: center;
-        font-size: 14px;
-        font-weight: 500;
-        text-transform: lowercase;
-
-        max-width: 353px;
-
-        @include tablet{
-            font-size: 12px;
         }
     }
 }

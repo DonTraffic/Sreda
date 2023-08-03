@@ -16,24 +16,6 @@
     margin-top: 25px;
   }
 }
-.section-main__content-title {
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 64px;
-  text-transform: lowercase;
-}
-@media screen and (max-width: 992px) {
-  .section-main__content-title {
-    font-size: 48px;
-    line-height: 48px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section-main__content-title {
-    font-size: 31px;
-    line-height: 31px;
-  }
-}
 .section-main__content-text {
   max-width: 416px;
   color: #000;
@@ -429,101 +411,5 @@
   .section-info__background {
     width: 250px;
     height: 250px;
-  }
-}
-
-.section-form-wrap {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.section-form__title {
-  color: #000;
-  text-align: center;
-  font-size: 42px;
-  font-weight: 600;
-  line-height: 42px;
-}
-@media screen and (max-width: 992px) {
-  .section-form__title {
-    font-size: 32px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section-form__title {
-    font-size: 24px;
-  }
-}
-.section-form__desc {
-  color: #000;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: lowercase;
-  margin: 17px 0 34px 0;
-  max-width: 745px;
-}
-@media screen and (max-width: 768px) {
-  .section-form__desc {
-    font-size: 12px;
-  }
-}
-.section-form__inputs {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 25px;
-  width: 100%;
-  max-width: 1050px;
-  grid-auto-flow: column;
-}
-@media screen and (max-width: 992px) {
-  .section-form__inputs {
-    gap: 15px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-}
-@media screen and (max-width: 768px) {
-  .section-form__inputs {
-    gap: 15px;
-    display: flex;
-    flex-direction: column;
-  }
-}
-.section-form__inputs-input {
-  border-radius: 5px;
-  border: 1px solid #BDBDBD;
-  background: #FFF;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: lowercase;
-  padding: 15px;
-}
-.section-form__inputs-input::-moz-placeholder { /* Most modern browsers support this now. */
-  color: #BDBDBD;
-}
-.section-form__inputs-input::placeholder { /* Most modern browsers support this now. */
-  color: #BDBDBD;
-}
-@media screen and (max-width: 768px) {
-  .section-form__inputs-input {
-    font-size: 14px;
-  }
-}
-.section-form__button {
-  margin: 20px 0;
-}
-.section-form__agreement {
-  color: #333333;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: lowercase;
-  max-width: 353px;
-}
-@media screen and (max-width: 768px) {
-  .section-form__agreement {
-    font-size: 12px;
   }
 }

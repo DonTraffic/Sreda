@@ -1,0 +1,130 @@
+@import './../vars.scss';
+
+.section-cases{
+    &-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 24px;
+
+        margin-bottom: 30px;
+
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include tablet{
+            gap: 30px;
+        }
+    }
+
+    &__item{
+        border-radius: 15px;
+        border: 1px solid $color-black;
+
+        overflow: hidden;
+
+        display: flex;
+        justify-content: space-between;
+
+        &-content{
+            height: auto;
+            max-width: 306px;
+            width: 100%;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include tablet{
+                max-width: 100%;
+            }
+
+            &-title{
+                color: $color-black;
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 32px;
+                text-transform: lowercase;
+                margin-bottom: 20px;
+
+                @include laptop{
+                    font-size: 24px;
+                    line-height: 24px;
+                    margin-bottom: 25px;
+                }
+
+                @include tablet{
+                    font-size: 16px;
+                    line-height: 16px;
+                    margin-bottom: 8px;
+                }
+            }
+
+            &-text{
+                color: $color-black;
+                font-size: 16px;
+                font-weight: 400;
+                text-transform: lowercase;
+
+                flex-grow: 1;
+
+                @include laptop{
+                    font-size: 14px;
+                }
+
+                @include tablet{
+                    font-size: 9px;
+                }
+            }
+
+            &-link{
+                color: $color-black;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: lowercase;
+                text-decoration: none;
+
+                display: flex;
+                align-items: center;
+
+                transition: .4s ease;
+
+                &:hover{
+                    color: $color-orange;
+
+                    svg{
+                        fill: $color-orange;
+                    }
+                }
+
+                @include tablet{
+                    font-size: 14px;
+                }
+
+                &-svg{
+                    width: 20px;
+                    height: 10px;
+                    margin-left: 10px;
+
+                    transition: .4s ease;
+                }
+            }
+        }
+
+        &-image{
+            max-width: 200px;
+            height: auto;
+            object-fit: cover;
+
+            @include laptop{
+                max-width: 160px;
+            }
+
+            @include phone{
+                max-width: 100px;
+            }
+        }
+    }
+}

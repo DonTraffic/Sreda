@@ -1,0 +1,120 @@
+.section-cases-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px 24px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .section-cases-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-cases-wrap {
+    gap: 30px;
+  }
+}
+.section-cases__item {
+  border-radius: 15px;
+  border: 1px solid #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.section-cases__item-content {
+  height: auto;
+  max-width: 306px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .section-cases__item-content {
+    max-width: 100%;
+  }
+}
+.section-cases__item-content-title {
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: lowercase;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 992px) {
+  .section-cases__item-content-title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-cases__item-content-title {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+}
+.section-cases__item-content-text {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: lowercase;
+  flex-grow: 1;
+}
+@media screen and (max-width: 992px) {
+  .section-cases__item-content-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-cases__item-content-text {
+    font-size: 9px;
+  }
+}
+.section-cases__item-content-link {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: lowercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease;
+}
+.section-cases__item-content-link:hover {
+  color: #FF776B;
+}
+.section-cases__item-content-link:hover svg {
+  fill: #FF776B;
+}
+@media screen and (max-width: 768px) {
+  .section-cases__item-content-link {
+    font-size: 14px;
+  }
+}
+.section-cases__item-content-link-svg {
+  width: 20px;
+  height: 10px;
+  margin-left: 10px;
+  transition: 0.4s ease;
+}
+.section-cases__item-image {
+  max-width: 200px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+  .section-cases__item-image {
+    max-width: 160px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .section-cases__item-image {
+    max-width: 100px;
+  }
+}
