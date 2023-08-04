@@ -1,0 +1,226 @@
+@import './../vars.scss';
+
+.section-tariff{
+    &__item{
+        border-radius: 14px;
+        border: 1px solid $color-black;
+        padding: 21px 30px 30px 30px;
+        color: $color-black;
+
+        @include phone{
+            padding: 10px 10px 30px 10px;
+        }
+
+        &-title{
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 26px;
+            margin-bottom: 10px;
+
+            @include phone{
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+        }
+
+        &-subtitle{
+            color: $color-dark;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 18px; 
+            margin-bottom: 15px;
+
+            @include phone{
+                font-size: 10px;
+            }
+        }
+
+        &-text{
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            margin-bottom: 30px;
+
+            @include phone{
+                font-size: 9px;
+            }
+        }
+
+        &-price{
+            font-size: 42px;
+            font-weight: 600;
+            line-height: 18px;
+            margin-bottom: 10px;
+
+            @include phone{
+                font-size: 24px;
+                margin-bottom: 0;
+            }
+        }
+
+        &-period{
+            color: $color-dark;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            margin-bottom: 40px;
+
+            @include phone{
+                margin-bottom: 30px;
+            }
+        }
+
+        &-btn{
+            margin-bottom: 40px;
+
+            @include phone{
+                margin-bottom: 30px;
+            }
+        }
+
+        &-list{
+            display: flex;
+            flex-direction: column;
+            gap: 21px;
+
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 18px;
+            padding-left: 25px;
+
+            list-style-image: url(./../../assets/svg/icon-check-mark.svg);
+
+            @include phone{
+                font-size: 12px;
+            }
+
+            &-title{
+                margin-bottom: 21px;
+            }
+        }
+    }
+}
+
+.section-features{
+    // overflow-x: scroll;
+    
+    // &-wrap{
+    //     min-width: $width-content;
+    //     max-width: $width-content;
+    // }
+
+    &__section{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0 50px;
+
+        border-bottom: 1px solid $color-gray;
+        padding: 11px 0;
+
+        &-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            &-title, &-price{
+                color: $color-black;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 26px;
+                margin-bottom: 5px;
+
+                @include tablet{
+                    font-size: 16px;
+                }
+
+                span{
+                    color: $color-dark;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+
+                    @include tablet{
+                        font-size: 9px;
+                    }
+                }
+            }
+
+            &-subtitle{
+                color: $color-dark;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 18px;
+                margin-bottom: 29px;
+
+                @include tablet{
+                    font-size: 9px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &-text{
+                color: $color-black;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 18px;
+
+                @include tablet{
+                    font-size: 12px;
+                }
+            }
+
+            &-help{
+                height: 100%;
+                width: 100%;
+
+                &-wrap{
+                    width: 20px;
+                    height: 20px;
+
+                    &:hover{
+                        cursor: help;
+                    }
+                }
+            }
+
+            &-check{
+                width: 100%;
+                height: 100%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &-svg{
+                    width: 15px;
+                    height: 10px;
+                }
+            }
+
+            &-btn{
+                width: 100%;
+            }
+
+            &:nth-child(1){
+                justify-content: space-between;
+                flex-direction: row;
+            }
+        }
+
+        &:nth-last-child(1){
+            border-bottom: 0px solid $color-gray;
+        }
+
+        &:nth-child(1){
+            border-bottom: 1px solid $color-black;
+            padding: 0;
+
+            .section-features__section-item:nth-child(1){
+                flex-direction: column;
+                justify-content: end;
+            }
+        }
+    }
+}

@@ -9,8 +9,10 @@ document.querySelectorAll('.slider').forEach(slider => {
     const btnNext = slider.querySelector('.slider__btn-next')
 
     // достаём настройки
-    const setting = slider.getAttribute('items-count') ?
+    const itemsCount = slider.getAttribute('items-count') ?
         JSON.parse(slider.getAttribute('items-count')) : {0: 1} ;
+    const itemsWidth = slider.getAttribute('items-width') ?
+        JSON.parse(slider.getAttribute('items-width')) : false ;
     const widthWrap = slider.getAttribute('width-wrap') ? 
         slider.getAttribute('width-wrap') : 1024 ;
     const drag = slider.getAttribute('drag') ? 
@@ -21,7 +23,9 @@ document.querySelectorAll('.slider').forEach(slider => {
     const padding = slider.getAttribute('padding') ?
         JSON.parse(slider.getAttribute('padding')) : '0' ;
 
-    let countMax = sliderCount()
+    let countMax = 0
+    let widthMax = 0
+
     let width = 0
     let widthItem = 0
     let matrix = new WebKitCSSMatrix(window.getComputedStyle(sliderLine).transform).m41;
@@ -40,26 +44,39 @@ document.querySelectorAll('.slider').forEach(slider => {
         sliderLine.style.transform = `translate(${matrix}px)`
     }
 
-    function sliderCount() {
+    function countItems() {
         let count
 
-        for (const key in setting) {
+        for (const key in itemsCount) {
             if (!count && window.innerWidth <= key) {
-                count = setting[key]
+                count = itemsCount[key]
             }
         }
 
-        return count ? count : setting[0]
+        return count ? count : itemsCount[0]
+    }
+
+    function widthItems() {
+        let width
+
+        for (const key in itemsWidth) {
+            if (!width && window.innerWidth <= key) {
+                width = itemsWidth[key]
+            }
+        }
+
+        return width ? width : itemsWidth[0]
     }
 
     function init () {
-        countMax = sliderCount()
+        countMax = countItems()
+        widthMax = widthItems()
 
         if (window.innerWidth < widthWrap) sliderLine.style.padding = `0 ${padding}px`
         sliderLine.style.gap = `${gap}px`
 
         width = sliderWrap.offsetWidth
-        widthItem = (width / countMax) - gap + gap/countMax
+        widthItem = widthMax ? widthMax : (width / countMax) - gap + gap/countMax ;
 
         sliderLine.style.width = `${(width * items.length) / countMax}px`
         items.forEach( item => {

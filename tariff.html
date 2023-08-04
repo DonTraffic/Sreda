@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tariff</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/pages/page-tariff.css">
+
+    <link rel="stylesheet" href="./styles/components/slider.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content wrapper">
+            <a href="./index.html" class="header__content-logo"></a>
+
+            <div class="header__content-list laptop-disable">
+                <a href="" class="header__content-list-item">кейсы</a>
+                <a href="" class="header__content-list-item">готовые материалы</a>
+                <a href="" class="header__content-list-item">возможности</a>
+                <a href="" class="header__content-list-item">опросы</a>
+                <a href="" class="header__content-list-item">журнал</a>
+            </div>
+
+            <div class="header__content-menu">
+                <svg class="header__content-menu-icon phone-disable">
+                    <use xlink:href="./assets/svg/sprite.svg#icon-user-regist"></use>
+                </svg>
+
+                <svg class="header__content-menu-icon phone-disable">
+                    <use xlink:href="./assets/svg/sprite.svg#icon-exit"></use>
+                </svg>
+
+                <div class="header__content-menu-phone" onclick="chengeHeaderMenu()">
+                    <svg class="header__content-menu-icon header__content-menu-phone-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-menu"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="header__content-modal disable">
+                <div class="header__content-modal-header">
+                    <a href="./index.html" class="header__content-modal-header-logo"></a>
+
+                    <svg class="header__content-modal-header-close" onclick="chengeHeaderMenu()">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-close"></use>
+                    </svg>
+                </div>
+
+                <div class="header__content-modal-list">
+                    <a href="#">кейсы</a>
+                    <a href="#">готовые материалы</a>
+                    <a href="#">возможности</a>
+                    <a href="#">опросы</a>
+                    <a href="#">журнал</a>
+                </div>
+
+                <div class="header__content-menu disable phone-enable">
+                    <svg class="header__content-menu-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-user-regist"></use>
+                    </svg>
+    
+                    <svg class="header__content-menu-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-exit"></use>
+                    </svg>
+                </div>
+
+                <div class="header__content-modal-footer">
+                    <a class="header__content-modal-footer-link" href="mailto:mail@sreda.ru">mail@sreda.ru</a>
+                    <a class="header__content-modal-footer-link" href="tel:+79998765432">+7 (999) 876-54-32</a>
+                    <div class="header__content-modal-footer-icons">
+                        <a href="">
+                            <svg class="header__content-modal-header-close">
+                                <use xlink:href="./assets/svg/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+
+                        <a href="">
+                            <svg class="header__content-modal-header-close">
+                                <use xlink:href="./assets/svg/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="sub-header">
+        <div class="bread-crumbs wrapper">
+            <a class="bread-crumbs__link" href="./index.html">Главная </a>
+            <p class="bread-crumbs__text">/ тарифы</p>
+        </div>
+    
+        <h1 class="wrapper">тарифы</h1>
+    </div>
+
+    <main class="main">
+        <section class="section-tariff wrapper--no-padding">
+            <div 
+                class="section-tariff__slider slider wrapper wrapper--no-padding" 
+                items-count='{"0":3, "450":1.2, "768":1.4, "992":2.2, "1100":2.6}' 
+                gap='24'
+                padding="31"
+                width-wrap="1296"
+            >
+
+                <div class="section-tariff__slider-line-wrap slider__line-wrap">
+                    <div class="section-tariff__slider-line slider__line">
+                        <div class="section-tariff__slider-line-item section-tariff__item slider__line-item">
+                            <h2 class="section-tariff__item-title">Тариф «Лучший старт»</h2>
+                            <p class="section-tariff__item-subtitle">Для начинающего бизнеса</p>
+
+                            <p class="section-tariff__item-text">
+                                Flatten bullet selection team editor community style select connection. Arrange community strikethrough object arrange. Move create subtract link plugin union.
+                            </p>
+
+                            <p class="section-tariff__item-price">от 9 000 ₽</p>
+                            <p class="section-tariff__item-period">В месяц</p>
+
+                            <button class="section-tariff__item-btn button">купить</button>
+
+                            <p class="section-tariff__item-list-title">Покупая данный тариф вы получаете:</p>
+                            <ul class="section-tariff__item-list">
+                                <li class="section-tariff__item-list-item">Create comment polygon opacity</li>
+                                <li class="section-tariff__item-list-item">Export style ellipse duplicate</li>
+                                <li class="section-tariff__item-list-item">Component bullet object follower</li>
+                                <li class="section-tariff__item-list-item">Pen polygon link mask</li>
+                                <li class="section-tariff__item-list-item">Inspect align image underline</li>
+                                <li class="section-tariff__item-list-item">Overflow selection move fill</li>
+                            </ul>
+                        </div>
+
+                        <div class="section-tariff__slider-line-item section-tariff__item slider__line-item">
+                            <h2 class="section-tariff__item-title">Тариф «Лучший старт»</h2>
+                            <p class="section-tariff__item-subtitle">Для начинающего бизнеса</p>
+
+                            <p class="section-tariff__item-text">
+                                Flatten bullet selection team editor community style select connection. Arrange community strikethrough object arrange. Move create subtract link plugin union.
+                            </p>
+
+                            <p class="section-tariff__item-price">от 9 000 ₽</p>
+                            <p class="section-tariff__item-period">В месяц</p>
+
+                            <button class="section-tariff__item-btn button">купить</button>
+
+                            <p class="section-tariff__item-list-title">Покупая данный тариф вы получаете:</p>
+                            <ul class="section-tariff__item-list">
+                                <li class="section-tariff__item-list-item">Create comment polygon opacity</li>
+                                <li class="section-tariff__item-list-item">Export style ellipse duplicate</li>
+                                <li class="section-tariff__item-list-item">Component bullet object follower</li>
+                                <li class="section-tariff__item-list-item">Pen polygon link mask</li>
+                                <li class="section-tariff__item-list-item">Inspect align image underline</li>
+                                <li class="section-tariff__item-list-item">Overflow selection move fill</li>
+                            </ul>
+                        </div>
+
+                        <div class="section-tariff__slider-line-item section-tariff__item slider__line-item">
+                            <h2 class="section-tariff__item-title">Тариф «Лучший старт»</h2>
+                            <p class="section-tariff__item-subtitle">Для начинающего бизнеса</p>
+
+                            <p class="section-tariff__item-text">
+                                Flatten bullet selection team editor community style select connection. Arrange community strikethrough object arrange. Move create subtract link plugin union.
+                            </p>
+
+                            <p class="section-tariff__item-price">от 9 000 ₽</p>
+                            <p class="section-tariff__item-period">В месяц</p>
+
+                            <button class="section-tariff__item-btn button">купить</button>
+
+                            <p class="section-tariff__item-list-title">Покупая данный тариф вы получаете:</p>
+                            <ul class="section-tariff__item-list">
+                                <li class="section-tariff__item-list-item">Create comment polygon opacity</li>
+                                <li class="section-tariff__item-list-item">Export style ellipse duplicate</li>
+                                <li class="section-tariff__item-list-item">Component bullet object follower</li>
+                                <li class="section-tariff__item-list-item">Pen polygon link mask</li>
+                                <li class="section-tariff__item-list-item">Inspect align image underline</li>
+                                <li class="section-tariff__item-list-item">Overflow selection move fill</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-features wrapper wrapper--no-padding">
+            <div 
+                class="section-tariff__slider slider" 
+                items-width='{"0":1296, "768":1200}' 
+                gap='24'
+                padding="31"
+                width-wrap="1296"
+            >
+                <div class="section-tasks__slider-line-wrap slider__line-wrap">
+                    <div class="section-tasks__slider-line slider__line">
+                        <div class="section-tasks__slider-line-item section-tasks__item slider__line-item">
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <h2 class="section-features__section-item-title">особенности</h2>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <h2 class="section-features__section-item-title">Layout font</h2>
+                                    <p class="section-features__section-item-subtitle">Для начинающего бизнеса</p>
+                                    <div class="section-features__section-item-price">9 000 ₽ <span>в месяц</span></div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <h2 class="section-features__section-item-title">Scale polygon</h2>
+                                    <p class="section-features__section-item-subtitle">Для начинающего бизнеса</p>
+                                    <div class="section-features__section-item-price">9 000 ₽ <span>в месяц</span></div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <h2 class="section-features__section-item-title">Outline create</h2>
+                                    <p class="section-features__section-item-subtitle">Для начинающего бизнеса</p>
+                                    <div class="section-features__section-item-price">9 000 ₽ <span>в месяц</span></div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <h2 class="section-features__section-item-title">Subtract auto</h2>
+                                    <p class="section-features__section-item-subtitle">Для начинающего бизнеса</p>
+                                    <div class="section-features__section-item-price">9 000 ₽ <span>в месяц</span></div>
+                                </div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <p class="section-features__section-item-text">Horizontal union layer</p>
+                                    
+                                    <div class="section-features__section-item-help-wrap">
+                                        <svg class="section-features__section-item-help">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-help"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <p class="section-features__section-item-text">Opacity select rotate</p>
+                                    
+                                    <div class="section-features__section-item-help-wrap">
+                                        <svg class="section-features__section-item-help">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-help"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <p class="section-features__section-item-text">Boolean vertical inspect</p>
+                                    
+                                    <div class="section-features__section-item-help-wrap">
+                                        <svg class="section-features__section-item-help">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-help"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <p class="section-features__section-item-text">Variant inspect asset</p>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <p class="section-features__section-item-text">Text select asset</p>
+                                    
+                                    <div class="section-features__section-item-help-wrap">
+                                        <svg class="section-features__section-item-help">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-help"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <p class="section-features__section-item-text">Line community move</p>
+                                    
+                                    <div class="section-features__section-item-help-wrap">
+                                        <svg class="section-features__section-item-help">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-help"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <p class="section-features__section-item-text">Mask auto editor</p>
+                                </div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <p class="section-features__section-item-text">Rotate component bold</p>
+                                    
+                                    <div class="section-features__section-item-help-wrap">
+                                        <svg class="section-features__section-item-help">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-help"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <p class="section-features__section-item-text">Pixel export font</p>
+                                </div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item">
+                                    <div class="section-features__section-item-check">
+                                        <svg class="section-features__section-item-check-svg">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-check-mark"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item">
+                                    <p class="section-features__section-item-text">Slice share vertical</p>
+                                    
+                                    <div class="section-features__section-item-help-wrap">
+                                        <svg class="section-features__section-item-help">
+                                            <use xlink:href="./assets/svg/sprite.svg#icon-help"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item"></div>
+                            </div>
+
+                            <div class="section-features__section">
+                                <div class="section-features__section-item"></div>
+
+                                <div class="section-features__section-item">
+                                    <button class="section-features__section-item-btn button">купить</button>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <button class="section-features__section-item-btn button">купить</button>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <button class="section-features__section-item-btn button">купить</button>
+                                </div>
+
+                                <div class="section-features__section-item">
+                                    <button class="section-features__section-item-btn button">купить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-form wrapper">
+            <form class="section-form-wrap section-fill section-fill--padding-50">
+                <h2 class="section-form__title">оставьте заявку для уточнения стоимости</h2>
+                <p class="section-form__desc">Оставьте заявку, и эксперт предоставит Вам бесплатную часовую консультацию с ответами на методологические вопросы и подбором функциональных решений на платформе онлайн-обучения SREDA для реализации задач Вашего бизнеса</p>
+
+                <div class="section-form__inputs">
+                    <input class="section-form__inputs-input" type="text" placeholder="ваше имя">
+                    <input class="section-form__inputs-input" type="text" placeholder="ваша компания">
+                    <input class="section-form__inputs-input" type="text" placeholder="количество сотрудников">
+                    <input class="section-form__inputs-input" type="text" placeholder="ваш номер">
+                    <input class="section-form__inputs-input" type="text" placeholder="корпоративный e-mail">
+                    <input class="section-form__inputs-input" type="text" placeholder="комментарий">
+                </div>
+                
+                <button class="section-form__button button">отправить</button>
+
+                <p class="section-form__agreement">Нажимая на кнопку «Отправить», Вы даете согласие на обработку своих персональных данных.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wrap wrapper">
+            <a href="./index.html" class="footer__logo"></a>
+
+            <div class="footer__links">
+                <a class="footer__links-link" href="">кейсы</a>
+                <a class="footer__links-link" href="">готовые материалы</a>
+                <a class="footer__links-link" href="">возможности</a>
+                <a class="footer__links-link" href="">опрос сотрудников</a>
+                <a class="footer__links-link" href="">FAQ</a>
+                <a class="footer__links-link" href="">журнал</a>
+                <a class="footer__links-link footer__links-link--margin" href="mailto:mail@sreda.ru">mail@sreda.ru</a>
+                <a class="footer__links-link" href="tel:+79998765432">+7 (999) 876-54-32</a>
+
+                <div class="footer__links-link-wrap">
+                    <a class="footer__links-link" href="">
+                        <svg class="footer__links-link-svg">
+                            <use xlink:href="./assets/svg/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a>
+
+                    <a class="footer__links-link" href="">
+                        <svg class="footer__links-link-svg">
+                            <use xlink:href="./assets/svg/sprite.svg#icon-telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="line"></div>
+        </div>
+
+        <div class="footer__agreement wrapper">
+            <a class="footer__agreement-link" href="">Пользовательское соглашение</a>
+            <a class="footer__agreement-link" href="">политики конфиденциальности</a>
+            <p class="footer__agreement-copy">среда &copy; 2016-2023 все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollSmooth(name) {
+            let element = document.querySelector(name).offsetTop - 80;
+            window.scrollTo({
+                top: element,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <!-- <script src="./scripts/modal.js"></script> -->
+</body>
+
+</html>
