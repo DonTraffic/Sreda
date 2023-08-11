@@ -1,0 +1,122 @@
+.finished-materials {
+  display: flex;
+  gap: 24px;
+}
+@media screen and (max-width: 1296px) {
+  .finished-materials {
+    flex-direction: column;
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .finished-materials {
+    gap: 50px;
+  }
+}
+.finished-materials__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 300px;
+  width: 100%;
+}
+@media screen and (max-width: 1296px) {
+  .finished-materials__menu {
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .finished-materials__menu {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .finished-materials__menu {
+    flex-direction: column;
+  }
+}
+.finished-materials__menu-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (max-width: 1296px) {
+  .finished-materials__menu-item {
+    width: -webkit-fill-available;
+  }
+  .finished-materials__menu-item--text {
+    max-width: 150px;
+  }
+}
+.finished-materials__menu-item-title {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: lowercase;
+  margin-bottom: 5px;
+}
+.finished-materials__menu-item-checkbox-origin {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.finished-materials__menu-item-checkbox-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  width: 15px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+.finished-materials__menu-item-checkbox-custom span {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-radius: 2px;
+  background: #33DCD8;
+  transition: 0.4s ease;
+}
+.finished-materials__menu-item-checkbox-custom .visible {
+  width: 9px;
+  height: 9px;
+}
+.finished-materials__menu-item-checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+.finished-materials__menu-item-checkbox-wrap:hover {
+  cursor: pointer;
+}
+.finished-materials__menu-item-select {
+  border-radius: 5px;
+  border: 1px solid #BDBDBD;
+  background: #fff;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.569) url('data:image/svg+xml,  <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="Vector 7" d="M1 1L7.5 7.5L14 1" stroke="%23BDBDBD" stroke-width="2" stroke-linecap="round"/></svg>') no-repeat !important;
+  background-position: calc(100% - 16px) center !important;
+}
+.finished-materials__menu-item-select:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .finished-materials__menu-item-select {
+    max-width: 350px;
+  }
+}
+.finished-materials__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}

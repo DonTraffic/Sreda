@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cases</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/pages/page-finished-materials.css">
+
+    <link rel="stylesheet" href="./styles/components/slider.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content wrapper">
+            <a href="./index.html" class="header__content-logo"></a>
+
+            <div class="header__content-list laptop-disable">
+                <a href="" class="header__content-list-item">кейсы</a>
+                <a href="" class="header__content-list-item">готовые материалы</a>
+                <a href="" class="header__content-list-item">возможности</a>
+                <a href="" class="header__content-list-item">опросы</a>
+                <a href="" class="header__content-list-item">журнал</a>
+            </div>
+
+            <div class="header__content-menu">
+                <svg class="header__content-menu-icon phone-disable">
+                    <use xlink:href="./assets/svg/sprite.svg#icon-user-regist"></use>
+                </svg>
+
+                <svg class="header__content-menu-icon phone-disable">
+                    <use xlink:href="./assets/svg/sprite.svg#icon-exit"></use>
+                </svg>
+
+                <div class="header__content-menu-phone" onclick="chengeHeaderMenu()">
+                    <svg class="header__content-menu-icon header__content-menu-phone-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-menu"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="header__content-modal disable">
+                <div class="header__content-modal-header">
+                    <a href="./index.html" class="header__content-modal-header-logo"></a>
+
+                    <svg class="header__content-modal-header-close" onclick="chengeHeaderMenu()">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-close"></use>
+                    </svg>
+                </div>
+
+                <div class="header__content-modal-list">
+                    <a href="#">кейсы</a>
+                    <a href="#">готовые материалы</a>
+                    <a href="#">возможности</a>
+                    <a href="#">опросы</a>
+                    <a href="#">журнал</a>
+                </div>
+
+                <div class="header__content-menu disable phone-enable">
+                    <svg class="header__content-menu-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-user-regist"></use>
+                    </svg>
+    
+                    <svg class="header__content-menu-icon">
+                        <use xlink:href="./assets/svg/sprite.svg#icon-exit"></use>
+                    </svg>
+                </div>
+
+                <div class="header__content-modal-footer">
+                    <a class="header__content-modal-footer-link" href="mailto:mail@sreda.ru">mail@sreda.ru</a>
+                    <a class="header__content-modal-footer-link" href="tel:+79998765432">+7 (999) 876-54-32</a>
+                    <div class="header__content-modal-footer-icons">
+                        <a href="">
+                            <svg class="header__content-modal-header-close">
+                                <use xlink:href="./assets/svg/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+
+                        <a href="">
+                            <svg class="header__content-modal-header-close">
+                                <use xlink:href="./assets/svg/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="sub-header">
+        <div class="bread-crumbs wrapper">
+            <a class="bread-crumbs__link" href="./index.html">Главная </a>
+            <p class="bread-crumbs__text">/ готовые материалы</p>
+        </div>
+    
+        <h1 class="wrapper">готовые материалы</h1>
+    </div>
+
+    <main class="main">
+        <section class="finished-materials wrapper">
+            <div class="finished-materials__menu">
+                <div class="finished-materials__menu-item finished-materials__menu-item--text">
+                    <p class="finished-materials__menu-item-title">стоимость</p>
+
+                    <label class="finished-materials__menu-item-checkbox-wrap custom-checkbox">
+                        <input class="finished-materials__menu-item-checkbox-origin custom-checkbox__origin" type="checkbox" value="paid">
+
+                        <div class="finished-materials__menu-item-checkbox-custom custom-checkbox__custom">
+                            <span></span>
+                        </div>
+
+                        <p>Платные</p>
+                    </label>
+
+                    <label class="finished-materials__menu-item-checkbox-wrap custom-checkbox">
+                        <input class="finished-materials__menu-item-checkbox-origin custom-checkbox__origin" type="checkbox" value="free">
+
+                        <div class="finished-materials__menu-item-checkbox-custom custom-checkbox__custom">
+                            <span></span>
+                        </div>
+
+                        <p>бесплатные</p>
+                    </label>
+                </div>
+
+                <div class="finished-materials__menu-item">
+                    <p class="finished-materials__menu-item-title">категории</p>
+
+                    <select class="finished-materials__menu-item-select">
+                        <option value="" disabled selected hidden>выберите категорию</option>
+                        <option value="value-1">категория 1</option>
+                        <option value="value-2">категория 2</option>
+                    </select>
+                </div>
+
+                <div class="finished-materials__menu-item">
+                    <p class="finished-materials__menu-item-title">сфера</p>
+
+                    <select class="finished-materials__menu-item-select">
+                        <option value="" disabled selected hidden>выберите сферу</option>
+                        <option value="value-1">сфера 1</option>
+                        <option value="value-2">сфера 2</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="finished-materials__cards">
+                <div class="slider__line-item card">
+                    <div class="card__img">
+                        <p class="card__img-desc">Selection</p>
+
+                        <p class="card__img-price">Selection</p>
+
+                        <img class="card__img-image" src="./assets/image/slider-1.jpg" alt="image-slider-1">
+
+                        <p class="card__img-title">Secret celsius cosmos avalanche</p>
+                    </div>
+
+                    <div class="card__content">
+                        <div class="card__content-info">
+                            <div class="card__content-info-item">
+                                <svg class="card__content-info-item-svg">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-watch"></use>
+                                </svg>
+                                <p class="card__content-info-item-text">90 мин</p>
+                            </div>
+
+                            <div class="card__content-info-item">
+                                <svg class="card__content-info-item-svg">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-star"></use>
+                                </svg>
+                                <p class="card__content-info-item-text">опросы</p>
+                            </div>
+                        </div>
+
+                        <button class="card__content-btn">подробнее</button>
+                    </div>
+                </div>
+
+                <div class="slider__line-item card">
+                    <div class="card__img">
+                        <p class="card__img-desc">Selection</p>
+
+                        <p class="card__img-price">Selection</p>
+
+                        <img class="card__img-image" src="./assets/image/slider-1.jpg" alt="image-slider-1">
+
+                        <p class="card__img-title">Secret celsius cosmos avalanche</p>
+                    </div>
+
+                    <div class="card__content">
+                        <div class="card__content-info">
+                            <div class="card__content-info-item">
+                                <svg class="card__content-info-item-svg">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-watch"></use>
+                                </svg>
+                                <p class="card__content-info-item-text">90 мин</p>
+                            </div>
+
+                            <div class="card__content-info-item">
+                                <svg class="card__content-info-item-svg">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-star"></use>
+                                </svg>
+                                <p class="card__content-info-item-text">опросы</p>
+                            </div>
+                        </div>
+
+                        <button class="card__content-btn">подробнее</button>
+                    </div>
+                </div>
+
+                <div class="slider__line-item card">
+                    <div class="card__img">
+                        <p class="card__img-desc">Selection</p>
+
+                        <p class="card__img-price">Selection</p>
+
+                        <img class="card__img-image" src="./assets/image/slider-1.jpg" alt="image-slider-1">
+
+                        <p class="card__img-title">Secret celsius cosmos avalanche</p>
+                    </div>
+
+                    <div class="card__content">
+                        <div class="card__content-info">
+                            <div class="card__content-info-item">
+                                <svg class="card__content-info-item-svg">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-watch"></use>
+                                </svg>
+                                <p class="card__content-info-item-text">90 мин</p>
+                            </div>
+
+                            <div class="card__content-info-item">
+                                <svg class="card__content-info-item-svg">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-star"></use>
+                                </svg>
+                                <p class="card__content-info-item-text">опросы</p>
+                            </div>
+                        </div>
+
+                        <button class="card__content-btn">подробнее</button>
+                    </div>
+                </div>
+
+                <div class="slider__line-item card">
+                    <div class="card__img">
+                        <p class="card__img-desc">Selection</p>
+
+                        <p class="card__img-price">Selection</p>
+
+                        <img class="card__img-image" src="./assets/image/slider-1.jpg" alt="image-slider-1">
+
+                        <p class="card__img-title">Secret celsius cosmos avalanche</p>
+                    </div>
+
+                    <div class="card__content">
+                        <div class="card__content-info">
+                            <div class="card__content-info-item">
+                                <svg class="card__content-info-item-svg">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-watch"></use>
+                                </svg>
+                                <p class="card__content-info-item-text">90 мин</p>
+                            </div>
+
+                            <div class="card__content-info-item">
+                                <svg class="card__content-info-item-svg">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-star"></use>
+                                </svg>
+                                <p class="card__content-info-item-text">опросы</p>
+                            </div>
+                        </div>
+
+                        <button class="card__content-btn">подробнее</button>
+                    </div>
+                </div>
+
+                <div class="slider__line-item card">
+                    <div class="card__img">
+                        <p class="card__img-desc">Selection</p>
+
+                        <p class="card__img-price">Selection</p>
+
+                        <img class="card__img-image" src="./assets/image/slider-1.jpg" alt="image-slider-1">
+
+                        <p class="card__img-title">Secret celsius cosmos avalanche</p>
+                    </div>
+
+                    <div class="card__content">
+                        <div class="card__content-info">
+                            <div class="card__content-info-item">
+                                <svg class="card__content-info-item-svg">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-watch"></use>
+                                </svg>
+                                <p class="card__content-info-item-text">90 мин</p>
+                            </div>
+
+                            <div class="card__content-info-item">
+                                <svg class="card__content-info-item-svg">
+                                    <use xlink:href="./assets/svg/sprite.svg#icon-star"></use>
+                                </svg>
+                                <p class="card__content-info-item-text">опросы</p>
+                            </div>
+                        </div>
+
+                        <button class="card__content-btn">подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            document.querySelectorAll('.custom-checkbox').forEach(box => {
+                box.querySelector('.custom-checkbox__origin').addEventListener('change', e => {
+                    let span = box.querySelector('.custom-checkbox__custom').querySelector('span')
+                    e.target.checked ? span.classList.add('visible') : span.classList.remove('visible') ;
+                })
+            });
+        </script>
+
+        <section class="section-form wrapper">
+            <form class="section-form-wrap section-fill section-fill--padding-50">
+                <h2 class="section-form__title">оставьте заявку для уточнения стоимости</h2>
+                <p class="section-form__desc">Оставьте заявку, и эксперт предоставит Вам бесплатную часовую консультацию с ответами на методологические вопросы и подбором функциональных решений на платформе онлайн-обучения SREDA для реализации задач Вашего бизнеса</p>
+
+                <div class="section-form__inputs">
+                    <input class="section-form__inputs-input" type="text" placeholder="ваше имя">
+                    <input class="section-form__inputs-input" type="text" placeholder="ваша компания">
+                    <input class="section-form__inputs-input" type="text" placeholder="количество сотрудников">
+                    <input class="section-form__inputs-input" type="text" placeholder="ваш номер">
+                    <input class="section-form__inputs-input" type="text" placeholder="корпоративный e-mail">
+                    <input class="section-form__inputs-input" type="text" placeholder="комментарий">
+                </div>
+                
+                <button class="section-form__button button">отправить</button>
+
+                <p class="section-form__agreement">Нажимая на кнопку «Отправить», Вы даете согласие на обработку своих персональных данных.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wrap wrapper">
+            <a href="./index.html" class="footer__logo"></a>
+
+            <div class="footer__links">
+                <a class="footer__links-link" href="">кейсы</a>
+                <a class="footer__links-link" href="">готовые материалы</a>
+                <a class="footer__links-link" href="">возможности</a>
+                <a class="footer__links-link" href="">опрос сотрудников</a>
+                <a class="footer__links-link" href="">FAQ</a>
+                <a class="footer__links-link" href="">журнал</a>
+                <a class="footer__links-link footer__links-link--margin" href="mailto:mail@sreda.ru">mail@sreda.ru</a>
+                <a class="footer__links-link" href="tel:+79998765432">+7 (999) 876-54-32</a>
+
+                <div class="footer__links-link-wrap">
+                    <a class="footer__links-link" href="">
+                        <svg class="footer__links-link-svg">
+                            <use xlink:href="./assets/svg/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a>
+
+                    <a class="footer__links-link" href="">
+                        <svg class="footer__links-link-svg">
+                            <use xlink:href="./assets/svg/sprite.svg#icon-telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="line"></div>
+        </div>
+
+        <div class="footer__agreement wrapper">
+            <a class="footer__agreement-link" href="">Пользовательское соглашение</a>
+            <a class="footer__agreement-link" href="">политики конфиденциальности</a>
+            <p class="footer__agreement-copy">среда &copy; 2016-2023 все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollSmooth(name) {
+            let element = document.querySelector(name).offsetTop - 80;
+            window.scrollTo({
+                top: element,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <!-- <script src="./scripts/modal.js"></script> -->
+</body>
+
+</html>

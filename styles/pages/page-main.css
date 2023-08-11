@@ -36,6 +36,23 @@
     margin: 15px 0 30px 0;
   }
 }
+.section-main__content-button-wrap {
+  width: 100%;
+  display: flex;
+  gap: 25px;
+}
+@media screen and (max-width: 425px) {
+  .section-main__content-button-wrap {
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.section-main__content-button-svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
 .section-main__img {
   width: 655px;
 }
@@ -177,86 +194,6 @@
   .section-surveys__content-info-desc {
     font-size: 14px;
   }
-}
-
-.section-material__item {
-  border-radius: 15px;
-  border: 1px solid #000;
-  overflow: hidden;
-}
-.section-material__item-img {
-  position: relative;
-}
-.section-material__item-img-image {
-  width: 100%;
-  position: relative;
-  top: -1px;
-  outline: 1px solid #000;
-  border-radius: 15px;
-}
-.section-material__item-img-desc {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: lowercase;
-  padding: 3px 14px;
-  background-color: #33DCD8;
-  border-radius: 31px;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-.section-material__item-img-title {
-  color: #000;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 20px;
-  text-transform: lowercase;
-  max-width: 60%;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-}
-.section-material__item-content {
-  padding: 15px 20px 20px 20px;
-}
-.section-material__item-content-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-.section-material__item-content-info-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.section-material__item-content-info-item-svg {
-  width: 20px;
-  height: 20px;
-}
-.section-material__item-content-info-item-text {
-  color: #000;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: lowercase;
-}
-.section-material__item-content-button {
-  width: 100%;
-  padding: 15px;
-  border-radius: 5px;
-  border: 1px solid #000;
-  background-color: #fff;
-  color: #000;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  text-transform: lowercase;
-  transition: 0.4s ease;
-}
-.section-material__item-content-button:hover {
-  cursor: pointer;
-  background-color: #000;
-  color: #fff;
 }
 
 .section-price-wrap {
