@@ -72,7 +72,8 @@ section {
 }
 @media screen and (max-width: 768px) {
   .section-fill--padding-50 {
-    font-size: 20;
+    font-size: 20px;
+    padding: 20px;
   }
 }
 
