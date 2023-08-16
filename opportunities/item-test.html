@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Opportunities</title>
+
+    <link rel="stylesheet" href="./../styles/main.css">
+    <link rel="stylesheet" href="./../styles/pages/page-item.css">
+
+    <link rel="stylesheet" href="./../styles/components/slider.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content wrapper">
+            <a href="./../index.html" class="header__content-logo"></a>
+
+            <div class="header__content-list laptop-disable">
+                <a href="" class="header__content-list-item">кейсы</a>
+                <a href="" class="header__content-list-item">готовые материалы</a>
+                <a href="" class="header__content-list-item">возможности</a>
+                <a href="" class="header__content-list-item">опросы</a>
+                <a href="" class="header__content-list-item">журнал</a>
+            </div>
+
+            <div class="header__content-menu">
+                <svg class="header__content-menu-icon phone-disable">
+                    <use xlink:href="./../assets/svg/sprite.svg#icon-user-regist"></use>
+                </svg>
+
+                <svg class="header__content-menu-icon phone-disable">
+                    <use xlink:href="./../assets/svg/sprite.svg#icon-exit"></use>
+                </svg>
+
+                <div class="header__content-menu-phone" onclick="chengeHeaderMenu()">
+                    <svg class="header__content-menu-icon header__content-menu-phone-icon">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-menu"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="header__content-modal disable">
+                <div class="header__content-modal-header">
+                    <a href="./../index.html" class="header__content-modal-header-logo"></a>
+
+                    <svg class="header__content-modal-header-close" onclick="chengeHeaderMenu()">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-close"></use>
+                    </svg>
+                </div>
+
+                <div class="header__content-modal-list">
+                    <a href="#">кейсы</a>
+                    <a href="#">готовые материалы</a>
+                    <a href="#">возможности</a>
+                    <a href="#">опросы</a>
+                    <a href="#">журнал</a>
+                </div>
+
+                <div class="header__content-menu disable phone-enable">
+                    <svg class="header__content-menu-icon">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-user-regist"></use>
+                    </svg>
+    
+                    <svg class="header__content-menu-icon">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-exit"></use>
+                    </svg>
+                </div>
+
+                <div class="header__content-modal-footer">
+                    <a class="header__content-modal-footer-link" href="mailto:mail@sreda.ru">mail@sreda.ru</a>
+                    <a class="header__content-modal-footer-link" href="tel:+79998765432">+7 (999) 876-54-32</a>
+                    <div class="header__content-modal-footer-icons">
+                        <a href="">
+                            <svg class="header__content-modal-header-close">
+                                <use xlink:href="./../assets/svg/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+
+                        <a href="">
+                            <svg class="header__content-modal-header-close">
+                                <use xlink:href="./../assets/svg/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="sub-header">
+        <div class="bread-crumbs wrapper">
+            <a class="bread-crumbs__return" href="./../opportunities.html">
+                <svg class="bread-crumbs__return-svg">
+                    <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                </svg>
+
+                вернуться назад
+            </a>
+            <div class="bread-crumbs-wrap">
+                <a class="bread-crumbs__link" href="./index.html">Главная </a>
+                <p class="bread-crumbs__text">/ опросы</p>
+            </div>
+        </div>
+    
+        <h1 class="wrapper">первичный тест</h1>
+    </div>
+
+    <main class="main">
+        <section class="section-image wrapper">
+            <div class="section-image-wrap">
+                <img class="section-image__image" src="./../assets/image/image-test.jpg" alt="image-test.jpg">
+            </div>
+        </section>
+
+        <section class="section-forwhat">
+            <div class="title-wrap wrapper">
+                <h2 class="title">Для чего</h2>
+            </div>
+
+            <div 
+                class="section-forwhat__slider slider wrapper wrapper--no-padding" 
+                items-count='{"0":3, "450":1.2, "650":1.8, "950":2.2, "1150":2.8}' 
+                gap='24'
+                padding="31"
+                width-wrap="1296"
+            >
+                <div class="section-forwhat__slider-line-wrap slider__line-wrap">
+                    <div class="section-forwhat__slider-line slider__line">
+                        <div class="section-forwhat__slider-line-item slider__line-item card">
+                            <div class="section-forwhat__item-img card__img">
+                                <img class="section-forwhat__item-img-image card__img-image" src="./../assets/image/image-test.jpg" alt="image-test.jpg">
+                            </div>
+
+                            <div class="section-forwhat__item-content card__content">
+                                <p class="section-forwhat__item-content-title card__content-title">Первичный тест</p>
+
+                                <p class="section-forwhat__item-content-description card__content-description">
+                                    Shadow connection polygon effect share flatten figma export shadow arrange. Slice follower distribute undo flatten boolean mask object invite community. Ipsum reesizing edit community invite effect distribute follower. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section-forwhat__slider-line-item slider__line-item card">
+                            <div class="section-forwhat__item-img card__img">
+                                <img class="section-forwhat__item-img-image card__img-image" src="./../assets/image/image-onboarding.jpg" alt="image-onboarding.jpg">
+                            </div>
+
+                            <div class="section-forwhat__item-content card__content">
+                                <p class="section-forwhat__item-content-title card__content-title">Onboarding сотрудника</p>
+
+                                <p class="section-forwhat__item-content-description card__content-description">
+                                    Shadow connection polygon effect share flatten figma export shadow arrange. Slice follower distribute undo flatten boolean mask object invite community. Ipsum reesizing edit community invite effect distribute follower. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="section-forwhat__slider-line-item slider__line-item card">
+                            <div class="section-forwhat__item-img card__img">
+                                <img class="section-forwhat__item-img-image card__img-image" src="./../assets/image/image-test.jpg" alt="image-test.jpg">
+                            </div>
+
+                            <div class="section-forwhat__item-content card__content">
+                                <p class="section-forwhat__item-content-title card__content-title">Наставничество</p>
+
+                                <p class="section-forwhat__item-content-description card__content-description">
+                                    Shadow connection polygon effect share flatten figma export shadow arrange. Slice follower distribute undo flatten boolean mask object invite community. Ipsum reesizing edit community invite effect distribute follower. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-wrap wrapper">
+                <button class="button button--disable">смотреть еще</button>
+            </div>
+        </section>
+
+        <section class="section-stages wrapper">
+            <h2 class="title">Этапы работы</h2>
+
+            <div class="section-stages-wrap section-fill">
+                <div class="section-stages__list">
+                    <div class="section-stages__list-item section-stages__list-item--show">
+                        <div class="section-stages__list-item-btn"><span>1</span>Подготовка проекта</div>
+
+                        <div class="section-stages__list-item-content">
+                            <p class="section-stages__list-item-text">
+                                Shadow connection polygon effect share flatten figma export shadow arrange. Slice follower distribute undo flatten boolean mask object invite community. Ipsum reesizing edit community invite effect distribute follower.
+                            </p>
+        
+                            <ul class="section-stages__list-item-list">
+                                <li class="section-stages__list-item-list-item">Library main align draft image reesizing scale asset pixel figjam. Frame invite component outline draft thumbnail distribute background undo clip.</li>
+        
+                                <li class="section-stages__list-item-list-item">Overflow outline selection line main library flatten main. Link clip blur shadow select project object editor main pen.</li>
+        
+                                <li class="section-stages__list-item-list-item">Component auto follower prototype layer. Rotate selection prototype arrow move ellipse.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-stages__list-item">
+                        <div class="section-stages__list-item-btn"><span>2</span>Опрос сотрудников</div>
+
+                        <div class="section-stages__list-item-content">
+                            <p class="section-stages__list-item-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint eligendi neque modi reprehenderit aliquid veniam consequuntur inventore. Culpa numquam fugit perspiciatis voluptate tenetur quis deserunt, facere laboriosam, at optio reiciendis ad dolores incidunt!
+                            </p>
+        
+                            <ul class="section-stages__list-item-list">
+                                <li class="section-stages__list-item-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dicta omnis sunt dolores earum ad ducimus veritatis nihil quis voluptas.</li>
+        
+                                <li class="section-stages__list-item-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum reprehenderit modi eum ex!</li>
+        
+                                <li class="section-stages__list-item-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem temporibus necessitatibus voluptas assumenda ex tenetur.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-stages__list-item">
+                        <div class="section-stages__list-item-btn"><span>3</span>Презентация результата и рекомендаций</div>
+
+                        <div class="section-stages__list-item-content">
+                            <p class="section-stages__list-item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cupiditate aperiam ullam ducimus doloribus architecto officiis quibusdam repellat, tempora natus. Quas asperiores totam sit reiciendis ipsa quis eaque architecto atque sapiente modi ex, laudantium exercitationem dolorum natus enim quisquam labore!
+                            </p>
+        
+                            <ul class="section-stages__list-item-list">
+                                <li class="section-stages__list-item-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos magnam nam reiciendis id.</li>
+        
+                                <li class="section-stages__list-item-list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis cupiditate officia necessitatibus.</li>
+        
+                                <li class="section-stages__list-item-list-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, rerum nobis molestias sapiente repellendus excepturi reprehenderit.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section-stages__list-item">
+                        <div class="section-stages__list-item-btn"><span>4</span> Подготовка проекта</div>
+
+                        <div class="section-stages__list-item-content">
+                            <p class="section-stages__list-item-text">
+                                Shadow connection polygon effect share flatten figma export shadow arrange. Slice follower distribute undo flatten boolean mask object invite community. Ipsum reesizing edit community invite effect distribute follower. 444444444
+                            </p>
+        
+                            <ul class="section-stages__list-item-list">
+                                <li class="section-stages__list-item-list-item">Library main align draft image reesizing scale asset pixel figjam. Frame invite component outline draft thumbnail distribute background undo clip.</li>
+        
+                                <li class="section-stages__list-item-list-item">Overflow outline selection line main library flatten main. Link clip blur shadow select project object editor main pen.</li>
+        
+                                <li class="section-stages__list-item-list-item">Component auto follower prototype layer. Rotate selection prototype arrow move ellipse.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            let btns = document.querySelectorAll('.section-stages__list-item-btn')
+
+            btns.forEach(btn => {
+                btn.addEventListener('click', e => {
+                    btns.forEach(item => {
+                        item.parentElement.classList.remove('section-stages__list-item--show')
+                    })
+
+                    e.target.parentElement.classList.add('section-stages__list-item--show')
+                })
+            });
+        </script>
+
+        <section class="section-why wrapper">
+            <h2 class="title">почему мы</h2>
+
+            <div class="section-why-wrap">
+                <div class="section-why__item">
+                    <svg class="section-why__item-svg">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-star-smoothed"></use>
+                    </svg>
+
+                    <p class="section-why__item-title">более 20 лет на рынке</p>
+                    <p class="section-why__item-text">Shiba-inu monero gala loopring velas zcash. THETA crypto maker quant ox polkadot amp audius.</p>
+
+                    <a class="section-why__item-link" href="#">
+                        Подробнее
+
+                        <svg class="section-why__item-link-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="section-why__item">
+                    <svg class="section-why__item-svg">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-work"></use>
+                    </svg>
+
+                    <p class="section-why__item-title">собственные методологии</p>
+                    <p class="section-why__item-text">Shiba-inu monero gala loopring velas zcash. THETA crypto maker quant ox polkadot amp audius.</p>
+
+                    <a class="section-why__item-link" href="#">
+                        Подробнее
+
+                        <svg class="section-why__item-link-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="section-why__item">
+                    <svg class="section-why__item-svg">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-chart"></use>
+                    </svg>
+
+                    <p class="section-why__item-title">аналитики</p>
+                    <p class="section-why__item-text">Shiba-inu monero gala loopring velas zcash. THETA crypto maker quant ox polkadot amp audius.</p>
+
+                    <a class="section-why__item-link" href="#">
+                        Подробнее
+
+                        <svg class="section-why__item-link-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="section-why__item">
+                    <svg class="section-why__item-svg">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-shield"></use>
+                    </svg>
+
+                    <p class="section-why__item-title">зарегистрированная it компания</p>
+                    <p class="section-why__item-text">Shiba-inu monero gala loopring velas zcash. THETA crypto maker quant ox polkadot amp audius.</p>
+
+                    <a class="section-why__item-link" href="#">
+                        Подробнее
+
+                        <svg class="section-why__item-link-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="section-why__item">
+                    <svg class="section-why__item-svg">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-password"></use>
+                    </svg>
+
+                    <p class="section-why__item-title">персонализированный подход</p>
+                    <p class="section-why__item-text">Shiba-inu monero gala loopring velas zcash. THETA crypto maker quant ox polkadot amp audius.</p>
+
+                    <a class="section-why__item-link" href="#">
+                        Подробнее
+
+                        <svg class="section-why__item-link-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="section-why__item">
+                    <svg class="section-why__item-svg">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-discount"></use>
+                    </svg>
+
+                    <p class="section-why__item-title">самые доступные цены на рынке</p>
+                    <p class="section-why__item-text">Shiba-inu monero gala loopring velas zcash. THETA crypto maker quant ox polkadot amp audius.</p>
+
+                    <a class="section-why__item-link" href="#">
+                        Подробнее
+
+                        <svg class="section-why__item-link-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-cases">
+            <div class="title-wrap wrapper">
+                <h2 class="title">наши кейсы</h2>
+            </div>
+
+            <div 
+                class="section-cases__slider slider wrapper wrapper--no-padding" 
+                items-count='{"0":3, "450":1.2, "650":1.8, "950":2.2, "1150":2.8}' 
+                gap='24'
+                padding="31"
+                width-wrap="1296"
+            >
+                <div class="section-cases__slider-line-wrap slider__line-wrap">
+                    <div class="section-cases__slider-line slider__line">
+                        <div class="section-cases__item slider__line-item card">
+                            <img class="section-cases__item-img" src="./../assets/image/image-cases-background.jpg" alt="image-cases-background.jpg">
+
+                            <p class="section-cases__item-title">Ellipse select selection</p>
+
+                            <a class="section-cases__item-link" href="#">
+                                смотреть
+
+                                <svg class="section-cases__item-link-svg">
+                                    <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="section-cases__item slider__line-item card">
+                            <img class="section-cases__item-img" src="./../assets/image/image-cases-background.jpg" alt="image-cases-background.jpg">
+
+                            <p class="section-cases__item-title">Ellipse select selection</p>
+
+                            <a class="section-cases__item-link" href="#">
+                                смотреть
+
+                                <svg class="section-cases__item-link-svg">
+                                    <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="section-cases__item slider__line-item card">
+                            <img class="section-cases__item-img" src="./../assets/image/image-cases-background.jpg" alt="image-cases-background.jpg">
+
+                            <p class="section-cases__item-title">Ellipse select selection</p>
+
+                            <a class="section-cases__item-link" href="#">
+                                смотреть
+
+                                <svg class="section-cases__item-link-svg">
+                                    <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="section-cases__item slider__line-item card">
+                            <img class="section-cases__item-img" src="./../assets/image/image-cases-background.jpg" alt="image-cases-background.jpg">
+
+                            <p class="section-cases__item-title">Ellipse select selection</p>
+
+                            <a class="section-cases__item-link" href="#">
+                                смотреть
+
+                                <svg class="section-cases__item-link-svg">
+                                    <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-link"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-cases__slider-btn-wrap">
+                    <div class="section-cases__slider-btn section-cases__slider-btn-prev slider__btn-prev">
+                        <svg class="section-cases__slider-btn-svg section-cases__slider-btn-prev-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-btn"></use>
+                        </svg>
+                    </div>
+                    <div class="section-cases__slider-btn section-cases__slider-btn-next slider__btn-next">
+                        <svg class="section-cases__slider-btn-svg section-cases__slider-btn-next-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-arrow-btn"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-form wrapper">
+            <form class="section-form-wrap section-fill section-fill--padding-50">
+                <h2 class="section-form__title">оставьте заявку для уточнения стоимости</h2>
+                <p class="section-form__desc">Оставьте заявку, и эксперт предоставит Вам бесплатную часовую консультацию с ответами на методологические вопросы и подбором функциональных решений на платформе онлайн-обучения SREDA для реализации задач Вашего бизнеса</p>
+
+                <div class="section-form__inputs">
+                    <input class="section-form__inputs-input" type="text" placeholder="ваше имя">
+                    <input class="section-form__inputs-input" type="text" placeholder="ваша компания">
+                    <input class="section-form__inputs-input" type="text" placeholder="количество сотрудников">
+                    <input class="section-form__inputs-input" type="text" placeholder="ваш номер">
+                    <input class="section-form__inputs-input" type="text" placeholder="корпоративный e-mail">
+                    <input class="section-form__inputs-input" type="text" placeholder="комментарий">
+                </div>
+                
+                <button class="section-form__button button">отправить</button>
+
+                <p class="section-form__agreement">Нажимая на кнопку «Отправить», Вы даете согласие на обработку своих персональных данных.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wrap wrapper">
+            <a href="./index.html" class="footer__logo"></a>
+
+            <div class="footer__links">
+                <a class="footer__links-link" href="">кейсы</a>
+                <a class="footer__links-link" href="">готовые материалы</a>
+                <a class="footer__links-link" href="">возможности</a>
+                <a class="footer__links-link" href="">опрос сотрудников</a>
+                <a class="footer__links-link" href="">FAQ</a>
+                <a class="footer__links-link" href="">журнал</a>
+                <a class="footer__links-link footer__links-link--margin" href="mailto:mail@sreda.ru">mail@sreda.ru</a>
+                <a class="footer__links-link" href="tel:+79998765432">+7 (999) 876-54-32</a>
+
+                <div class="footer__links-link-wrap">
+                    <a class="footer__links-link" href="">
+                        <svg class="footer__links-link-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a>
+
+                    <a class="footer__links-link" href="">
+                        <svg class="footer__links-link-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="line"></div>
+        </div>
+
+        <div class="footer__agreement wrapper">
+            <a class="footer__agreement-link" href="">Пользовательское соглашение</a>
+            <a class="footer__agreement-link" href="">политики конфиденциальности</a>
+            <p class="footer__agreement-copy">среда &copy; 2016-2023 все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollSmooth(name) {
+            let element = document.querySelector(name).offsetTop - 80;
+            window.scrollTo({
+                top: element,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <script src="./../scripts/script.js"></script>
+    <script src="./../scripts/slider.js"></script>
+    <!-- <script src="./scripts/modal.js"></script> -->
+</body>
+
+</html>
