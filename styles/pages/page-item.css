@@ -27,7 +27,7 @@
   width: 100%;
   padding: 70px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-stages-wrap {
     gap: 50px;
   }
@@ -104,7 +104,7 @@
   transition: 0.4s ease;
   border-bottom: 4px solid rgba(255, 255, 255, 0);
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-stages__list-item-btn {
     font-size: 20px;
   }
@@ -127,7 +127,7 @@
   font-size: 48px;
   font-weight: 500;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-stages__list-item-btn span {
     font-size: 40px;
   }
@@ -180,7 +180,7 @@
   list-style: none;
   position: relative;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-stages__list-item-list-item {
     font-size: 16px;
   }
@@ -204,7 +204,7 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-why-wrap {
     gap: 30px 24px;
   }
@@ -249,7 +249,7 @@
   line-height: 24px;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-why__item-title {
     font-size: 20px;
   }
@@ -389,7 +389,7 @@
   align-items: center;
   gap: 134px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-methodology-wrap {
     gap: 30px;
   }
@@ -399,7 +399,7 @@
   height: 480px;
   border-radius: 15px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-methodology__image {
     width: 370px;
     height: 416px;

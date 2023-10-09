@@ -17,7 +17,7 @@
 .section-opportunities__item--revert {
   grid-template-areas: "section-opportunities__item-image section-opportunities__item-title" "section-opportunities__item-image section-opportunities__item-text" "section-opportunities__item-image section-opportunities__item-link";
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-opportunities__item {
     gap: 10px 50px;
   }

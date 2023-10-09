@@ -44,7 +44,7 @@
   text-transform: lowercase;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-cases__item-content-title {
     font-size: 24px;
     line-height: 24px;
@@ -65,7 +65,7 @@
   text-transform: lowercase;
   flex-grow: 1;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-cases__item-content-text {
     font-size: 14px;
   }
@@ -108,7 +108,7 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .section-cases__item-image {
     max-width: 160px;
   }

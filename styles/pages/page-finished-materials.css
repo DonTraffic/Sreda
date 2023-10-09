@@ -2,13 +2,13 @@
   display: flex;
   gap: 24px;
 }
-@media screen and (max-width: 1296px) {
+@media screen and (max-width: 1440px) {
   .finished-materials {
     flex-direction: column;
     gap: 80px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .finished-materials {
     gap: 50px;
   }
@@ -20,7 +20,7 @@
   max-width: 300px;
   width: 100%;
 }
-@media screen and (max-width: 1296px) {
+@media screen and (max-width: 1440px) {
   .finished-materials__menu {
     max-width: 100%;
     flex-direction: row;
@@ -28,12 +28,12 @@
     gap: 100px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .finished-materials__menu {
     gap: 10px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .finished-materials__menu {
     flex-direction: column;
   }
@@ -43,7 +43,7 @@
   flex-direction: column;
   gap: 10px;
 }
-@media screen and (max-width: 1296px) {
+@media screen and (max-width: 1440px) {
   .finished-materials__menu-item {
     width: -webkit-fill-available;
   }
@@ -109,7 +109,7 @@
 .finished-materials__menu-item-select:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .finished-materials__menu-item-select {
     max-width: 350px;
   }
