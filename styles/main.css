@@ -334,6 +334,7 @@ h1 {
 @media screen and (max-width: 425px) {
   .header {
     padding: 21px 0 0 0;
+    margin-bottom: 24px;
   }
 }
 .header__content {
