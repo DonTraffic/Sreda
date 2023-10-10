@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>восстановление пароля</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content wrapper">
+            <a href="./../index.html" class="header__content-logo"></a>
+
+            <div class="header__content-list laptop-disable">
+                <a href="" class="header__content-list-item">кейсы</a>
+                <a href="" class="header__content-list-item">готовые материалы</a>
+                <a href="" class="header__content-list-item">возможности</a>
+                <a href="" class="header__content-list-item">опросы</a>
+                <a href="" class="header__content-list-item">журнал</a>
+            </div>
+
+            <div class="header__content-menu">
+                <svg class="header__content-menu-icon phone-disable">
+                    <use xlink:href="./../assets/svg/sprite.svg#icon-user-regist"></use>
+                </svg>
+
+                <svg class="header__content-menu-icon phone-disable">
+                    <use xlink:href="./../assets/svg/sprite.svg#icon-exit"></use>
+                </svg>
+
+                <div class="header__content-menu-phone" onclick="chengeHeaderMenu()">
+                    <svg class="header__content-menu-icon header__content-menu-phone-icon">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-menu"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="header__content-modal disable">
+                <div class="header__content-modal-header">
+                    <a href="./../index.html" class="header__content-modal-header-logo"></a>
+
+                    <svg class="header__content-modal-header-close" onclick="chengeHeaderMenu()">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-close"></use>
+                    </svg>
+                </div>
+
+                <div class="header__content-modal-list">
+                    <a href="#">кейсы</a>
+                    <a href="#">готовые материалы</a>
+                    <a href="#">возможности</a>
+                    <a href="#">опросы</a>
+                    <a href="#">журнал</a>
+                </div>
+
+                <div class="header__content-menu disable phone-enable">
+                    <svg class="header__content-menu-icon">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-user-regist"></use>
+                    </svg>
+    
+                    <svg class="header__content-menu-icon">
+                        <use xlink:href="./../assets/svg/sprite.svg#icon-exit"></use>
+                    </svg>
+                </div>
+
+                <div class="header__content-modal-footer">
+                    <a class="header__content-modal-footer-link" href="mailto:mail@sreda.ru">mail@sreda.ru</a>
+                    <a class="header__content-modal-footer-link" href="tel:+79998765432">+7 (999) 876-54-32</a>
+                    <div class="header__content-modal-footer-icons">
+                        <a href="">
+                            <svg class="header__content-modal-header-close">
+                                <use xlink:href="./../assets/svg/sprite.svg#icon-vk"></use>
+                            </svg>
+                        </a>
+
+                        <a href="">
+                            <svg class="header__content-modal-header-close">
+                                <use xlink:href="./../assets/svg/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="sub-header">
+        <div class="bread-crumbs wrapper">
+            <div class="bread-crumbs-wrap">
+                <a class="bread-crumbs__link" href="./index.html">Главная </a>
+                <p class="bread-crumbs__text">/ восстановление пароля</p>
+            </div>
+        </div>
+    
+        <h1 class="wrapper">восстановление пароля</h1>
+    </div>
+
+    <main class="main">
+        <form class="form wrapper" action="">
+            <div class="form__inputs">
+                <input class="form__input" type="email" placeholder="e-mail" required>
+            </div>
+
+            <button class="form__button button">отправить</button>
+
+            <a 
+                class="form__text" 
+                href="./registration.html"
+            >Не зарегистрированы? Создать аккаунт</a>
+
+            <img 
+                class="form__background" 
+                src="./assets/svg/page-form-background.svg" 
+                alt="page-form-background"
+            >
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wrap wrapper">
+            <a href="./index.html" class="footer__logo"></a>
+
+            <div class="footer__links">
+                <a class="footer__links-link" href="">кейсы</a>
+                <a class="footer__links-link" href="">готовые материалы</a>
+                <a class="footer__links-link" href="">возможности</a>
+                <a class="footer__links-link" href="">опрос сотрудников</a>
+                <a class="footer__links-link" href="">FAQ</a>
+                <a class="footer__links-link" href="">журнал</a>
+                <a class="footer__links-link footer__links-link--margin" href="mailto:mail@sreda.ru">mail@sreda.ru</a>
+                <a class="footer__links-link" href="tel:+79998765432">+7 (999) 876-54-32</a>
+
+                <div class="footer__links-link-wrap">
+                    <a class="footer__links-link" href="">
+                        <svg class="footer__links-link-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a>
+
+                    <a class="footer__links-link" href="">
+                        <svg class="footer__links-link-svg">
+                            <use xlink:href="./../assets/svg/sprite.svg#icon-telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="line"></div>
+        </div>
+
+        <div class="footer__agreement wrapper">
+            <a class="footer__agreement-link" href="">Пользовательское соглашение</a>
+            <a class="footer__agreement-link" href="">политики конфиденциальности</a>
+            <p class="footer__agreement-copy">среда &copy; 2016-2023 все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

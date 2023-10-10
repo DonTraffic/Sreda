@@ -1,0 +1,58 @@
+@import './../vars.scss';
+
+.section-rigistr{
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+
+    @include phone{
+        gap: 10px;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        color: $color-black;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: none;
+
+        @include phone{
+            font-size: 14px;
+        }
+
+        &-svg{
+            height: 130px;
+
+            @include phone{
+                height: 45px;
+            }
+
+            &-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+
+                @include phone{
+                    width: 140px;
+                    height: 140px;
+                }
+                
+                &--company{
+                    background: linear-gradient(135deg, #FF776B 0%, rgba(255, 119, 107, 0.00) 100%);
+                }
+
+                &--employee{
+                    background: linear-gradient(135deg, #00DFD9 0%, rgba(0, 223, 217, 0.00) 100%);
+                }
+            }
+        }
+    }
+}

@@ -129,6 +129,9 @@ h1{
     line-height: 64px;
     color: $color-black;
 
+    z-index: 2;
+    position: relative;
+
     @include tablet{
         font-size: 31px;
         line-height: 31px;
@@ -841,6 +844,113 @@ h1{
         }
     }
 }
+
+.form{    
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    *{z-index: 2;}
+    
+    &__inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        &--grid-3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px 24px;
+
+            @include tablet{
+                gap: 20px 6px;
+            }
+
+            @include phone{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+    &__input{
+        width: 100%;
+        max-width: 420px;
+
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #828282;
+        background: $color-white;
+
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: lowercase;
+    }
+
+    &__checkbox{
+        max-width: 520px;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        color: $color-black;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: lowercase;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    &__button{
+        margin-bottom: 20px;
+        padding: 15px 70px;
+
+        @include tablet{
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text{
+        color: $color-black;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: lowercase;
+        text-decoration: none;
+    }
+
+    &__background{
+        z-index: 1;
+
+        position: absolute;
+        right: 0;
+        top: 50%;
+        translate: 0% -60%;
+
+        height: 550px;
+        width: 550px;
+
+        @include tablet{
+            width: 480px;
+            height: 480px;
+        }
+
+        @include tablet{
+            width: 250px;
+            height: 250px;
+
+            fill: linear-gradient(135deg, #00DFD9 0%, rgba(0, 223, 217, 0.00) 100%);
+            filter: blur(10px);
+            translate: 30% -90%;
+        }
+    }
+}
+
+// .section-rigistr{
+//     display: none;
+// }
 
 
 
